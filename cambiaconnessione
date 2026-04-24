@@ -13,7 +13,7 @@ then
 		echo "non è stato trovato il file /etc/apt/apt.conf.d/apt.conf"
 	fi
 
-elif [ $1 = castelli -o $1=Castelli ]
+elif [ $1 = castelli -o $1 = Castelli ]
 then
 	export {http_proxy,https_proxy,ftp_proxy,HTTP_PROXY,HTTPS_PROXY}="http://127.0.0.1:3128"
 	export no_proxy="localhost,127.0.0.1"
